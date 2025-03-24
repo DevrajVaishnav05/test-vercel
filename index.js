@@ -3,11 +3,10 @@ import express from "express";
 const app = express();
 
 // Routes
-app.get("/test", (req,res)=>{
- res.json({
-  message:"Hello Devraj",
-
- })
+app.get("/", (req, res) => {
+  res.json({
+    message: "Hello Devraj",
+  });
 });
 
 const port = 5000;
